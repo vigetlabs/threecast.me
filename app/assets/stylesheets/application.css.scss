@@ -1,0 +1,185 @@
+/* @group Normalize.css */
+
+	html {
+		font-family: sans-serif;
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	footer,
+	header,
+	main {
+		display: block;
+	}
+
+	a {
+		background-color: transparent;
+
+		&:active,
+		&:hover {
+			outline: 0;
+		}
+	}
+
+	b,
+	strong {
+		font-weight: bold;
+	}
+
+	h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+
+	img {
+		border: 0;
+	}
+
+/* @end */
+
+/* @group Elements */
+
+	html {
+		background-color: #fff;
+	}
+
+	body {
+		color: #333;
+		line-height: 1.4;
+		padding: 3em 0;
+		text-align: center;
+	}
+
+	a {
+		color: #1496bb;
+
+		&:focus,
+		&:hover {
+			color: darken(#1496bb, 10%);
+		}
+	}
+
+/* @end */
+
+/* @group Layout */
+
+	.container {
+		padding: 0 1em;
+	}
+
+/* @end */
+
+/* @group Global header */
+
+	.global-header {
+		h1 {
+			margin: 0;
+
+			a {
+				color: #333;
+				text-decoration: none;
+
+				&:focus,
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+/* @end */
+
+/* @group Global content */
+
+	.global-content {
+		margin: 3em 0;
+	}
+
+/* @end */
+
+/* @group Global footer */
+
+	.global-footer {
+		color: #666;
+
+		p {
+			font-size: 0.875em;
+		}
+
+		a {
+			color: #333;
+
+			&:focus,
+			&:hover {
+				color: darken(#333, 10%);
+			}
+		}
+	}
+
+/* @end */
+
+/* @group Locations list */
+
+	.locations-list {
+		list-style: none;
+		padding: 0;
+
+		li + li {
+			margin-top: 1.5em;
+		}
+
+		a {
+			background-color: #eee;
+			border-radius: 0.25rem;
+			display: block;
+			font-size: 1.25em;
+			font-weight: bold;
+			padding: 3rem;
+			text-decoration: none;
+
+			&:focus,
+			&:hover {
+				background-color: darken(#eee, 5%);
+			}
+		}
+	}
+
+/* @end */
+
+/* @group Forecast */
+
+	.forecast p {
+		background-color: #eee;
+		border-radius: 0.25rem;
+		font-size: 2em;
+		margin: 0;
+		padding: 3rem;
+	}
+
+/* @end */
+
+/* @group Error'ed */
+
+	.error {
+		p {
+			color: #c00;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		a {
+			color: #a00;
+
+			&:focus,
+			&:hover {
+				color: lighten(#a00, 10%);
+			}
+		}
+	}
+
+/* @end */

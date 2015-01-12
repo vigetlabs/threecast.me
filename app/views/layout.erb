@@ -3,21 +3,25 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Threecast</title>
+	<title>Threecast — How’s the weather?</title>
+
+	<link rel="stylesheet" href="<%= stylesheet_path 'application' %>">
 </head>
 <body>
 
-	<header role="banner">
-		<h1><a href="/" rel="home">Threecast</a></h1>
-	</header>
+	<div class="container">
+		<header class="global-header" role="banner">
+			<h1><a href="/" rel="home">Threecast</a></h1>
+		</header>
 
-	<main role="main">
-		<%= yield %>
-	</main>
+		<main class="global-content" role="main">
+			<%= yield %>
+		</main>
 
-	<footer role="contentinfo">
-		<p>Powered by <a href="http://forecast.io/">Forecast</a>.</p>
-	</footer>
+		<footer class="global-footer" role="contentinfo">
+			<p>Built by <a href="http://viget.com/">Viget</a>. Powered by <a href="http://forecast.io/">Forecast</a>.</p>
+		</footer>
+	</div>
 
 </body>
 </html>

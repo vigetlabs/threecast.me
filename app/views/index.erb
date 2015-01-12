@@ -1,0 +1,5 @@
+<ul class="locations-list">
+	<% @locations.each do |slug, location| %>
+		<li><a href="/locations/<%= slug %>"><%= location['name'] %></a></li>
+	<% end %>
+</ul>

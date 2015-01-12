@@ -4,11 +4,11 @@ class Threecast < Sinatra::Base
   end
 
   get '/locations/:slug' do
-    @location = Location.where(slug: params[:slug])
+    @location = Location.where(slug: params[:slug]).first
 
-    if @location.any?
-      # ForecastIO.api_key = settings.forecast_io_api_key
-      # @forecast = ForecastIO.forecast(@location['lat'], @location['lng'])
+    if @location
+      ForecastIO.api_key = settings.forecast_io_api_key
+      @forecast = ForecastIO.forecast(@location.lat, @location.lng)
 
       erb :'locations/show'
     else

@@ -1,6 +1,5 @@
 class Threecast < Sinatra::Base
   get '/' do
-    # @locations = settings.locations
     @locations = Location.all
 
     erb :index

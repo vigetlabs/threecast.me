@@ -1,8 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (4.2.0)
+      activesupport (= 4.2.0)
+      builder (~> 3.1)
+    activerecord (4.2.0)
+      activemodel (= 4.2.0)
+      activesupport (= 4.2.0)
+      arel (~> 6.0)
+    activesupport (4.2.0)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    arel (6.0.0)
     backports (3.6.4)
     bond (0.5.1)
+    builder (3.2.2)
     coffee-script (2.3.0)
       coffee-script-source
       execjs
@@ -16,8 +31,12 @@ GEM
       multi_json
     hashie (3.3.2)
     hike (1.2.3)
+    i18n (0.7.0)
+    json (1.8.2)
+    minitest (5.5.0)
     multi_json (1.10.1)
     multipart-post (2.0.0)
+    pg (0.18.1)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
@@ -39,6 +58,9 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
+    sinatra-activerecord (2.0.3)
+      activerecord (>= 3.2)
+      sinatra (~> 1.0)
     sinatra-asset-pipeline (0.6.0)
       coffee-script (~> 2.3)
       rake (~> 10.0)
@@ -64,20 +86,25 @@ GEM
     sprockets-sass (1.3.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    thread_safe (0.3.4)
     tilt (1.4.1)
     tux (0.3.0)
       ripl (>= 0.3.5)
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   forecast_io
+  pg
   shotgun
   sinatra
+  sinatra-activerecord
   sinatra-asset-pipeline
   sinatra-contrib
   tux

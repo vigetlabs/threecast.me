@@ -1,15 +1,1 @@
 forecast_io_api_key: YOUR_FORECAST_IO_API_KEY
-
-locations:
-  'falls-church':
-    name: 'Falls Church, VA'
-    lat: 38.885467
-    lng: -77.163572
-  'durham':
-    name: 'Durham, NC'
-    lat: 35.997189
-    lng: -78.899819
-  'boulder':
-    name: 'Boulder, CO'
-    lat: 40.017037
-    lng: -105.277413

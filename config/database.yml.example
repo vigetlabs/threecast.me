@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  username:
+  password:
+  host: localhost
+  database: threecast_development
+

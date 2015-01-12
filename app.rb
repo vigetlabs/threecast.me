@@ -1,3 +1,5 @@
+Bundler.require
+
 class Threecast < Sinatra::Base
   set :views, "#{settings.root}/app/views"
 
@@ -5,6 +7,7 @@ class Threecast < Sinatra::Base
   set :assets_precompile, %w(application.css)
   set :assets_prefix, %w(app/assets)
 
+  register Sinatra::ActiveRecordExtension
   register Sinatra::AssetPipeline
   register Sinatra::ConfigFile
 

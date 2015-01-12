@@ -1,5 +1,5 @@
 .bundle
 .DS_Store
 .ruby-version
-config/config.yml
 config/database.yml
+config/forecast_io.yml

@@ -9,9 +9,6 @@ class Threecast < Sinatra::Base
 
   register Sinatra::ActiveRecordExtension
   register Sinatra::AssetPipeline
-  register Sinatra::ConfigFile
-
-  config_file 'config/config.yml'
 end
 
 Dir.glob('./app/**/*.rb', &method(:require))

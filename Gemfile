@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 
 # Application
 gem 'sinatra'
-gem 'sinatra-contrib'
 
 # Database
 gem 'pg'

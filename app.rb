@@ -9,6 +9,10 @@ class Threecast < Sinatra::Base
 
   register Sinatra::ActiveRecordExtension
   register Sinatra::AssetPipeline
+
+  Rufus::Scheduler.new.every '5m' do
+    system 'bundle exec rake update_all_forecasts'
+  end
 end
 
 Dir.glob('./app/**/*.rb', &method(:require))

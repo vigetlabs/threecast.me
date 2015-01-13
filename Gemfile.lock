@@ -50,6 +50,8 @@ GEM
       rack (>= 1.0)
       rack-test (~> 0.6.2)
       ripl (>= 0.7.0)
+    rufus-scheduler (3.0.9)
+      tzinfo
     sass (3.4.9)
     shotgun (0.9)
       rack (>= 1.0)
@@ -94,6 +96,7 @@ PLATFORMS
 DEPENDENCIES
   forecast_io
   pg
+  rufus-scheduler
   shotgun
   sinatra
   sinatra-activerecord

@@ -11,6 +11,7 @@ gem 'sinatra-activerecord', require: 'sinatra/activerecord'
 
 # Utilities
 gem 'forecast_io'
+gem 'rufus-scheduler'
 
 # Assets
 gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'

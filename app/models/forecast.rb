@@ -8,7 +8,7 @@ class Forecast < ActiveRecord::Base
   end
 
   def self.request(location)
-    ForecastIO.api_key = YAML.load(File.open('config/forecast_io.yml'))['api_key']
+    ForecastIO.api_key = Threecast.settings.forecast_io_api_key
     ForecastIO.forecast(location.lat, location.lng)
   end
 

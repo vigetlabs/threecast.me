@@ -1,4 +1,4 @@
-module ThreecastHelpers
+module ApplicationHelper
   def self.delete_all_forecasts
     Forecast.delete_all
   end
@@ -8,4 +8,4 @@ module ThreecastHelpers
   end
 end
 
-helpers ThreecastHelpers
+helpers ApplicationHelper

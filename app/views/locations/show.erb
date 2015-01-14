@@ -3,4 +3,6 @@
 		It’s currently <b><%= @location.forecast.currently.temperature.round %>°</b> in <%= @location.name %>.
 		It feels like <b><%= @location.forecast.currently.apparent_temperature.round %>°</b>.
 	</p>
+
+	<small>Updated at <%= @location.forecast.updated_at.strftime('%F %T %Z') %>.</small>
 </div>
